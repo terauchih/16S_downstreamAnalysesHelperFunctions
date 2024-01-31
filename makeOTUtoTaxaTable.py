@@ -175,7 +175,7 @@ def split_each_taxalvl(splitName):
     Output: numerical level and its associated taxa
     '''
     
-    splitlist = re.split("__|\.__", name)
+    splitlist = re.split("__|\.__", splitName)
     leveltaxa = list(filter(lambda x: re.search('[0-9]|[a-zA-Z]', x), splitlist))
 
     if len(leveltaxa) == 2:
